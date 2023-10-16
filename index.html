@@ -71,32 +71,32 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script>
-     var browserName = navigator.appName;
-    console.log("Nama Peramban: " + browserName);
-    var browserVersion = navigator.appVersion;
-    console.log("Versi Peramban: " + browserVersion);
-        $.get("https://ipinfo.io", function(response) {
-                console.log("Location data:", response);
-            }, "json");
-     $.getJSON('https://json.geoiplookup.io/?callback=?', function (data) {
-            var json_data = data;
-            console.log(data)
-            // $.ajax({
-            //     url: "{{ url('tracking/person') }}",
-            //     type: "POST",
-            //     data: {
-            //         json_data_person: json_data,
-            //         url: url,
-            //         _token: token
-            //     },
-            //     success: function (result) {
+    //  var browserName = navigator.appName;
+    // console.log("Nama Peramban: " + browserName);
+    // var browserVersion = navigator.appVersion;
+    // console.log("Versi Peramban: " + browserVersion);
+    //     $.get("https://ipinfo.io", function(response) {
+    //             console.log("Location data:", response);
+    //         }, "json");
+    //  $.getJSON('https://json.geoiplookup.io/?callback=?', function (data) {
+    //         var json_data = data;
+    //         console.log(data)
+    //         // $.ajax({
+    //         //     url: "{{ url('tracking/person') }}",
+    //         //     type: "POST",
+    //         //     data: {
+    //         //         json_data_person: json_data,
+    //         //         url: url,
+    //         //         _token: token
+    //         //     },
+    //         //     success: function (result) {
 
-            //     },
-            //     error: function (request, status, error) {
-            //         console.log(error);
-            //     }
-            // });
-        });
+    //         //     },
+    //         //     error: function (request, status, error) {
+    //         //         console.log(error);
+    //         //     }
+    //         // });
+    //     });
 </script>
 </html>
 
