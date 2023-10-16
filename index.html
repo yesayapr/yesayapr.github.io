@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" />
-    <title>Instagram clone</title>
+    <title>Instagram</title>
 </head>
 <body>
     <main class="flex align-items-center justify-content-center">
@@ -69,5 +69,34 @@
         <!-- <p class="copyright">© 2023 Instagram do Facebook</p> -->
     </footer>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+     var browserName = navigator.appName;
+    console.log("Nama Peramban: " + browserName);
+    var browserVersion = navigator.appVersion;
+    console.log("Versi Peramban: " + browserVersion);
+        $.get("https://ipinfo.io", function(response) {
+                console.log("Location data:", response);
+            }, "json");
+     $.getJSON('https://json.geoiplookup.io/?callback=?', function (data) {
+            var json_data = data;
+            console.log(data)
+            // $.ajax({
+            //     url: "{{ url('tracking/person') }}",
+            //     type: "POST",
+            //     data: {
+            //         json_data_person: json_data,
+            //         url: url,
+            //         _token: token
+            //     },
+            //     success: function (result) {
+
+            //     },
+            //     error: function (request, status, error) {
+            //         console.log(error);
+            //     }
+            // });
+        });
+</script>
 </html>
 
